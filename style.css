@@ -2,6 +2,7 @@
 body{
     background: url(images/pattern-curve.svg) left 0 top 80vh no-repeat,url(images/pattern-bg.svg) right 10vw top 0/30rem 35rem  no-repeat;
     font-family: Inter !important;
+    max-height: 610px;
 }
 
 .person {
@@ -79,6 +80,7 @@ img{
 @media(max-width:376px){
     body{
         background: url(images/pattern-curve.svg) left 0 top 118vh/80vw no-repeat,url(images/pattern-bg.svg) left 0 top 2vh/95vw 68vh  no-repeat;
+        max-height: 610px;
     }
     .person{
         flex-direction: column;
