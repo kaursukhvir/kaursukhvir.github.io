@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+body{
+    background: url(images/pattern-curve.svg) left 0 top 80vh no-repeat,url(images/pattern-bg.svg) right 10vw top 0/30rem 35rem  no-repeat;
+    font-family: Inter !important;
+}
+
+.person {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 70vw;
+    margin:auto;
+    margin-top: 10vh;
+    max-height: 50vh;
+}
+
+p{
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position-x:8vw;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-right: -3rem;
+    padding-right: 0;
+    padding-bottom:0 ;
+    line-height: 2;
+    color: hsl(240, 38%, 20%);
+}
+
+.person span:nth-of-type(1){
+    
+    padding-top: 0;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: hsl(240, 38%, 20%);
+}
+
+.person span:nth-of-type(2){
+    margin-left: 0.3rem;
+    padding-top: 0;
+    font-size: 1.2rem;
+    color:  hsl(240, 18%, 77%);
+    font-weight: 500;
+}
+
+
+
+img{
+    width: 35vw;
+    height: 70vh;
+    margin: 0;
+    box-shadow: 0.5rem 1rem 2rem hsl(240, 18%, 77%);
+}
+
+.icon{
+    position: absolute;
+    top:28.5rem;
+    width:3rem;
+    height: 0.4rem;
+    padding:1rem;
+    margin:1rem;
+    padding-top: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon svg:hover{
+    cursor: pointer;
+}
+
+.display{
+    display: none;
+}
+
+
+@media(max-width:376px){
+    body{
+        background: url(images/pattern-curve.svg) left 0 top 118vh/80vw no-repeat,url(images/pattern-bg.svg) left 0 top 2vh/95vw 68vh  no-repeat;
+    }
+    .person{
+        flex-direction: column;
+    }
+    img{
+        width: 75vw;
+        height: 50vh;
+    }
+    .icon{
+        top:20rem;
+    }
+    p{
+        font-size: 1.1rem;
+        background-position-x: 18vw;
+        background-size: 23vw 13vh;
+        line-height: 1.5;
+        text-align: center;
+        margin-right: 0.3rem;
+
+    }
+    .person span:nth-of-type(1){
+        text-align: center;
+        
+        font-size: 1rem;
+        display: block;
+    }
+    .person span:nth-of-type(2){
+        text-align: center;
+        font-size: 0.8rem;
+        display: block;
+    }
+    .name{
+        margin-top: 0;
+        margin-bottom:2rem;
+    }
+}
